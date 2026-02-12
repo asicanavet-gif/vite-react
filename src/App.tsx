@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div style={{ padding: "40px", fontFamily: "Arial" }}>
-      <h1>AIPLAT</h1>
+      <h1>AI-PLATFORM</h1>
       <h2>AI Tools Directory</h2>
 
       {tools.map((tool, index) => (
