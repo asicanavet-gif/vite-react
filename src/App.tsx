@@ -1,3 +1,5 @@
+import "./App.css";
+
 function App() {
   const tools = [
     {
@@ -23,22 +25,23 @@ function App() {
   ];
 
   return (
-    <div style={{ padding: "40px", fontFamily: "Arial" }}>
-      <h1>AI-PLATFORM</h1>
-      <h2>AI Tools Directory</h2>
+    <div className="container">
+      <div className="header">
+        <div className="title">AIPLAT</div>
+        <div className="subtitle">AI Tools Directory</div>
+      </div>
 
-      {tools.map((tool, index) => (
-        <div key={index} style={{
-          border: "1px solid #ddd",
-          padding: "15px",
-          marginBottom: "10px",
-          borderRadius: "8px"
-        }}>
-          <h3>{tool.name}</h3>
-          <p>{tool.description}</p>
-          <a href={tool.link} target="_blank">Open</a>
-        </div>
-      ))}
+      <div className="tools-grid">
+        {tools.map((tool, index) => (
+          <div key={index} className="tool-card">
+            <div className="tool-name">{tool.name}</div>
+            <div className="tool-desc">{tool.description}</div>
+            <a href={tool.link} target="_blank" className="open-link">
+              Open →
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
