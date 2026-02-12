@@ -1,101 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>AIPLAT – AI Tools Directory</title>
-  <meta name="description" content="Best AI tools in one place">
+<title>AIPLAT – AI Tools Directory</title>
+<meta name="description" content="Discover the best AI tools in one place">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      margin: 0;
-      padding: 40px;
-      color: #111;
-    }
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f6f5;
+  margin: 0;
+  color: #1f2937;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-    }
+/* NAVBAR */
+.navbar {
+  background: #0f766e;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
 
-    h2 {
-      color: #666;
-      margin-bottom: 30px;
-    }
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-    }
+.nav-links a:hover {
+  opacity: 0.8;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
+/* MAIN */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
-    .card h3 {
-      margin-top: 0;
-    }
+h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
 
-    .card p {
-      color: #666;
-    }
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
 
-    .card a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: bold;
-    }
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
 
-    .card a:hover {
-      text-decoration: underline;
-    }
-  </style>
+/* CARDS */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  border-color: #14b8a6;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0f766e;
+}
+
+.card p {
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.card a {
+  color: #14b8a6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* CATEGORY TITLE */
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #374151;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+</style>
 </head>
 <body>
 
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">AIPLAT</div>
+  <div class="nav-links">
+    <a href="#">Chat AI</a>
+    <a href="#">Image AI</a>
+    <a href="#">Video AI</a>
+    <a href="#">Voice AI</a>
+    <a href="#">Business AI</a>
+  </div>
+</div>
+
 <div class="container">
-  <h1>AIPLAT</h1>
-  <h2>AI Tools Directory</h2>
+  <h1>AI Tools Directory</h1>
+  <div class="subtitle">Best AI tools for work, business and creativity</div>
 
+  <!-- CHAT AI -->
+  <div class="section-title">Chat AI</div>
   <div class="grid">
-
     <div class="card">
       <h3>ChatGPT</h3>
-      <p>AI chatbot for writing and coding</p>
+      <p>AI assistant for writing, coding and ideas</p>
       <a href="https://chat.openai.com" target="_blank">Open</a>
     </div>
 
     <div class="card">
+      <h3>Claude</h3>
+      <p>Advanced AI for long documents and analysis</p>
+      <a href="https://claude.ai" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Perplexity</h3>
+      <p>AI search engine with sources</p>
+      <a href="https://perplexity.ai" target="_blank">Open</a>
+    </div>
+  </div>
+
+  <!-- IMAGE AI -->
+  <div class="section-title">Image AI</div>
+  <div class="grid">
+    <div class="card">
       <h3>Midjourney</h3>
-      <p>AI image generator</p>
+      <p>High-quality AI image generation</p>
       <a href="https://www.midjourney.com" target="_blank">Open</a>
     </div>
 
     <div class="card">
+      <h3>DALL·E</h3>
+      <p>Create images from text</p>
+      <a href="https://openai.com/dall-e" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Leonardo AI</h3>
+      <p>AI art and design platform</p>
+      <a href="https://leonardo.ai" target="_blank">Open</a>
+    </div>
+  </div>
+
+  <!-- VIDEO AI -->
+  <div class="section-title">Video AI</div>
+  <div class="grid">
+    <div class="card">
       <h3>Runway</h3>
-      <p>AI video generation</p>
+      <p>AI video generation and editing</p>
       <a href="https://runwayml.com" target="_blank">Open</a>
     </div>
 
     <div class="card">
+      <h3>Pika</h3>
+      <p>Create videos from text</p>
+      <a href="https://pika.art" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Synthesia</h3>
+      <p>AI avatar video creation</p>
+      <a href="https://www.synthesia.io" target="_blank">Open</a>
+    </div>
+  </div>
+
+  <!-- VOICE AI -->
+  <div class="section-title">Voice AI</div>
+  <div class="grid">
+    <div class="card">
       <h3>ElevenLabs</h3>
-      <p>AI voice generator</p>
+      <p>Realistic AI voice generation</p>
       <a href="https://elevenlabs.io" target="_blank">Open</a>
     </div>
 
+    <div class="card">
+      <h3>Murf</h3>
+      <p>AI voice for presentations</p>
+      <a href="https://murf.ai" target="_blank">Open</a>
+    </div>
   </div>
+
+</div>
+
+<div class="footer">
+  © 2026 AIPLAT – AI Tools Platform
 </div>
 
 </body>
