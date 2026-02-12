@@ -37,10 +37,26 @@
 
     .logo-area {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       gap: 8px;
     }
 
+    /* RESPONSIVE LOGO IMAGE — replaces leaf icon */
+    .logo-image {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-image img {
+      height: 42px;
+      width: auto;
+      max-width: 180px;
+      object-fit: contain;
+      display: block;
+      transition: all 0.2s ease;
+    }
+
+    /* text logo fallback – hidden when using img */
     .logo {
       font-size: 1.8rem;
       font-weight: 700;
@@ -49,7 +65,7 @@
     }
 
     .logo span {
-      background: #83b79b;  /* soft sage */
+      background: #83b79b;
       padding: 4px 12px;
       border-radius: 30px;
       font-size: 0.9rem;
@@ -94,7 +110,7 @@
       padding: 0 2rem;
     }
 
-    /* subtle blend with body */
+    /* page header – now with logo image + text */
     .page-header {
       margin-bottom: 2rem;
     }
@@ -102,16 +118,25 @@
     .page-header h1 {
       font-size: 2.8rem;
       font-weight: 700;
-      color: #244034;  /* dark green-grey */
+      color: #244034;
       letter-spacing: -0.02em;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
-    .page-header h1 i {
-      color: #578b6e;
-      font-size: 2.6rem;
+    /* responsive logo inside H1 */
+    .header-logo {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .header-logo img {
+      height: 58px;
+      width: auto;
+      max-width: 200px;
+      object-fit: contain;
     }
 
     .page-header h2 {
@@ -190,7 +215,6 @@
       background: white;
     }
 
-    /* subtle decoration */
     .card::after {
       content: '';
       position: absolute;
@@ -273,7 +297,7 @@
       align-self: flex-start;
     }
 
-    /* footer – matching grey-green */
+    /* footer – matching grey-green (existing .footer-note) */
     .footer-note {
       margin-top: 60px;
       text-align: center;
@@ -307,6 +331,12 @@
       .page-header h1 {
         font-size: 2rem;
       }
+      .header-logo img {
+        height: 48px;
+      }
+      .logo-image img {
+        height: 38px;
+      }
     }
 
     /* custom green-grey touches */
@@ -323,46 +353,57 @@
       margin-bottom: 10px;
     }
 
-    /* refined footer - green-grey harmony */
-.footer {
-  background: #2c4a3b;  /* deep pine, matching navbar */
-  color: #e3f0e5;
-  text-align: center;
-  padding: 2rem 1.5rem;
-  margin-top: 3rem;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  border-top: 3px solid #83b79b;
-  box-shadow: 0 -4px 12px rgba(35, 55, 40, 0.08);
-  font-weight: 450;
-  width: 100%;
-}
+    /* ===== NEW REFINED FOOTER STYLES (class .footer) ===== */
+    .footer {
+      background: #2c4a3b;  /* deep pine, matching navbar */
+      color: #e3f0e5;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      margin-top: 1.5rem;    /* reduced from 3rem for better flow */
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      border-top: 3px solid #83b79b;
+      box-shadow: 0 -4px 12px rgba(35, 55, 40, 0.08);
+      font-weight: 450;
+      width: 100%;
+    }
 
-.footer i, .footer .fas, .footer .far {
-  color: #aad3ba;
-  margin: 0 6px;
-  transition: color 0.2s;
-}
+    .footer i, .footer .fas, .footer .far {
+      color: #aad3ba;
+      margin: 0 6px;
+      transition: color 0.2s;
+    }
 
-.footer:hover i {
-  color: #d4f0db;
-}
+    .footer:hover i {
+      color: #d4f0db;
+    }
 
-/* optional small screens adjustment */
-@media (max-width: 700px) {
-  .footer {
-    padding: 1.5rem 1rem;
-    font-size: 0.9rem;
-  }
-}
+    /* small screens adjustment for .footer */
+    @media (max-width: 700px) {
+      .footer {
+        padding: 1.5rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    /* ensure footer doesn't overlap and has spacing */
+    body > .footer {
+      margin-bottom: 0;
+      position: relative;
+      bottom: 0;
+    }
   </style>
 </head>
 <body>
 
-  <!-- 🌿 GREEN-GREY NAVBAR with subsections -->
+  <!-- 🌿 GREEN-GREY NAVBAR with subsections (logo image integrated) -->
   <nav class="navbar">
     <div class="logo-area">
-      <div class="logo">AIPLAT <span>alpha</span></div>
+      <!-- REPLACED text logo with responsive IMAGE logo (logo.png) -->
+      <div class="logo-image">
+        <img src="logo.png" alt="AIPLAT logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div class="logo" style="display: none;">AIPLAT <span>alpha</span></div>
+      </div>
     </div>
     <ul class="nav-links">
       <li><a href="#"><i class="fas fa-layer-group"></i> All tools</a></li>
@@ -376,10 +417,14 @@
   </nav>
 
   <div class="container">
-    <!-- header area with subtle subsection pills (matching navbar subsections) -->
+    <!-- header area – REPLACED Font Awesome leaf with logo.png -->
     <div class="page-header">
       <h1>
-        <i class="fas fa-leaf" style="color: #578b6e;"></i> AIPLAT
+        <span class="header-logo">
+          <img src="logo.png" alt="AIPLAT" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <i class="fas fa-leaf" style="color: #578b6e; font-size: 2.6rem; display: none;"></i>
+        </span>
+        AIPLAT
       </h1>
       <h2>AI Tools Directory · green‑grey collection</h2>
     </div>
@@ -394,7 +439,7 @@
       <span class="pill"><i class="fas fa-robot"></i> Productivity</span>
     </div>
 
-    <!-- ✦ EXPANDED GRID – 12 AI tools, beautifully styled ✦ -->
+    <!-- ✦ EXPANDED GRID – 16 AI tools, beautifully styled ✦ -->
     <div class="grid">
 
       <!-- 1. ChatGPT (writing/code) -->
@@ -538,7 +583,7 @@
       </span>
     </div>
 
-    <!-- simple footer matching palette -->
+    <!-- simple footer matching palette (existing .footer-note) -->
     <div class="footer-note">
       <span><i class="fas fa-copyright"></i> AIPLAT directory — minimalist & fresh</span>
       <span><i class="fas fa-envelope"></i> suggest tool</span>
@@ -547,10 +592,13 @@
 
   </div> <!-- container -->
 
-  <!-- subtle wave (optional green-grey touch) -->
+  <!-- subtle wave spacer (optional green-grey touch) -->
   <div style="height: 16px;"></div>
+
+  <!-- ===== YOUR NEW FOOTER ===== -->
   <div class="footer">
-  © 2026 AIPLAT – AI Tools Platform
-</div>
+    © 2026 AIPLAT – AI Tools Platform
+  </div>
+
 </body>
 </html>
