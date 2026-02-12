@@ -322,6 +322,39 @@
     .container .grid:last-child {
       margin-bottom: 10px;
     }
+
+    /* refined footer - green-grey harmony */
+.footer {
+  background: #2c4a3b;  /* deep pine, matching navbar */
+  color: #e3f0e5;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-top: 3px solid #83b79b;
+  box-shadow: 0 -4px 12px rgba(35, 55, 40, 0.08);
+  font-weight: 450;
+  width: 100%;
+}
+
+.footer i, .footer .fas, .footer .far {
+  color: #aad3ba;
+  margin: 0 6px;
+  transition: color 0.2s;
+}
+
+.footer:hover i {
+  color: #d4f0db;
+}
+
+/* optional small screens adjustment */
+@media (max-width: 700px) {
+  .footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
   </style>
 </head>
 <body>
