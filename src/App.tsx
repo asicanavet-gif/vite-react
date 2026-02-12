@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="container">
       <div className="header">
-        <div className="title">AIPLAT</div>
+        <div className="title">AI-PLATFORM</div>
         <div className="subtitle">AI Tools Directory</div>
       </div>
 
