@@ -22,7 +22,13 @@ function App() {
       description: "AI voice generator",
       link: "https://elevenlabs.io"
     }
-  ];
+  },
+{
+  name: "Leonardo AI",
+  description: "AI image generator",
+  link: "https://leonardo.ai"
+}
+];    
 
   return (
     <div className="container">
@@ -30,6 +36,8 @@ function App() {
         <div className="title">AI-PLATFORM</div>
         <div className="subtitle">AI Tools Directory</div>
       </div>
+  <h2>Games & Entertainment</h2>
+  <p>AI game tools, fun apps and interactive platforms</p>
 
       <div className="tools-grid">
         {tools.map((tool, index) => (
