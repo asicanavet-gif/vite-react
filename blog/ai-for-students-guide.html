@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Tools for Students in 2026 — Study Smarter, Not Harder | AIPLAT</title>
+  <meta name="description" content="A practical guide for students on using AI tools in 2026 — for research, writing, revision, and learning, without crossing the line into academic dishonesty.">
+  <meta name="keywords" content="AI for students 2026, AI study tools, ChatGPT for studying, AI research tools students, best AI for university">
+  <meta property="og:title" content="AI Tools for Students in 2026 | AIPLAT">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/png" href="../icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .article-container { display: grid; grid-template-columns: 1fr 300px; gap: 3.5rem; align-items: flex-start; max-width: 1200px; }
+    .article-hero-emoji { font-size: 4.5rem; line-height: 1; margin-bottom: 1.5rem; display: block; }
+    .article-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-bottom: 2.2rem; padding-bottom: 1.4rem; border-bottom: 2px solid #d5e8de; }
+    .article-meta-item { display: flex; align-items: center; gap: 7px; font-size: 0.88rem; color: #5a7a6a; font-weight: 500; }
+    .article-meta-item i { color: #4a7f66; font-size: 0.82rem; }
+    .article-meta-item strong { color: #244034; }
+    .article-tag { background: #d8f5e0; color: #1a5c38; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; padding: 4px 12px; border-radius: 30px; }
+    .article-content { font-family: 'Lora', Georgia, serif; font-size: 1.05rem; line-height: 1.82; color: #2a3e38; }
+    .article-content p { margin-bottom: 1.4rem; }
+    .article-content h2 { font-family: 'DM Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: #1f4037; margin: 2.6rem 0 1rem; letter-spacing: -.02em; display: flex; align-items: center; gap: 10px; }
+    .article-content h2 i { color: #4a7f66; font-size: 1.2rem; flex-shrink: 0; }
+    .article-content h3 { font-family: 'DM Sans', sans-serif; font-size: 1.15rem; font-weight: 700; color: #244034; margin: 1.8rem 0 0.7rem; }
+    .article-content strong { color: #1f4037; font-weight: 700; }
+    .article-content em { font-style: italic; color: #4a6a60; }
+    .article-content ul { margin: 1rem 0 1.4rem 1.4rem; }
+    .article-content li { margin-bottom: 0.6rem; line-height: 1.6; }
+    .article-content ul li::marker { color: #4a7f66; }
+    .callout { background: linear-gradient(135deg, #f0faf4, #e6f5ec); border-left: 4px solid #4a7f66; border-radius: 0 14px 14px 0; padding: 1.2rem 1.6rem; margin: 1.8rem 0; font-family: 'DM Sans', sans-serif; font-size: 0.93rem; color: #2a4b3a; line-height: 1.55; }
+    .callout strong { color: #1a3e2a; } .callout i { color: #4a7f66; margin-right: 6px; }
+    .warning-box { background: #fffbea; border-left: 4px solid #e8a020; border-radius: 0 14px 14px 0; padding: 1.2rem 1.6rem; margin: 1.8rem 0; font-family: 'DM Sans', sans-serif; font-size: 0.93rem; color: #5a4010; line-height: 1.55; }
+    .warning-box i { color: #e8a020; margin-right: 6px; }
+    .tool-spotlight { background: #fff; border: 1.5px solid #d5e8de; border-radius: 18px; padding: 1.4rem 1.6rem; margin: 1.4rem 0; box-shadow: 0 6px 14px -4px rgba(40,65,55,.08); font-family: 'DM Sans', sans-serif; }
+    .tool-spotlight-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; gap: 12px; }
+    .tool-spotlight h4 { font-size: 1.05rem; font-weight: 700; color: #1f4037; display: flex; align-items: center; gap: 8px; }
+    .tool-spotlight h4 i { color: #4a7f66; }
+    .tool-spotlight p { font-size: 0.9rem; color: #4b665c; line-height: 1.5; margin-bottom: 10px; font-family: 'DM Sans', sans-serif; }
+    .tool-spotlight-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+    .ts-badge { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; padding: 3px 9px; border-radius: 20px; }
+    .ts-free { background: #dff0fb; color: #0c4a7a; } .ts-paid { background: #ece8fd; color: #3a1f7a; } .ts-best { background: #fff3cc; color: #7a5c00; }
+    .ts-open-link { display: inline-flex; align-items: center; gap: 6px; background: #376b53; color: #f1f9f0; font-size: 0.82rem; font-weight: 700; padding: 7px 14px; border-radius: 30px; text-decoration: none; transition: .18s; white-space: nowrap; flex-shrink: 0; }
+    .ts-open-link:hover { background: #1f4d3b; }
+    .do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 1.6rem 0; font-family: 'DM Sans', sans-serif; }
+    .do-box { background: #ecfbf2; border: 1.5px solid #b8e8ca; border-radius: 14px; padding: 1.1rem 1.3rem; }
+    .dont-box { background: #fff5f5; border: 1.5px solid #f4c0c0; border-radius: 14px; padding: 1.1rem 1.3rem; }
+    .do-box h5 { color: #1a5c38; font-size: 0.85rem; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: .5px; }
+    .dont-box h5 { color: #8a2020; font-size: 0.85rem; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: .5px; }
+    .do-box ul, .dont-box ul { margin-left: 1rem; }
+    .do-box li, .dont-box li { font-size: 0.88rem; margin-bottom: 5px; line-height: 1.4; color: #2a3e38; }
+    .do-box li::marker { color: #2a8a54; } .dont-box li::marker { color: #c43030; }
+    .article-divider { border: none; border-top: 1.5px solid #d5e8de; margin: 2.5rem 0; }
+    .conclusion-box { background: linear-gradient(135deg, #1f4037, #2c6650); border-radius: 20px; padding: 2rem 2.2rem; color: #e0f0e8; font-family: 'DM Sans', sans-serif; margin-top: 2.5rem; }
+    .conclusion-box h2 { color: #c8e8d8 !important; font-size: 1.3rem !important; margin-top: 0 !important; }
+    .conclusion-box p { font-family: 'DM Sans', sans-serif; color: #b8d8c8; font-size: 0.95rem; line-height: 1.6; margin-bottom: .8rem; }
+    .conclusion-box strong { color: #e0f0e8; }
+    .article-sidebar { position: sticky; top: 80px; }
+    .sidebar-card { background: #fff; border: 1.5px solid #e2f0e7; border-radius: 18px; padding: 1.4rem 1.6rem; margin-bottom: 20px; box-shadow: 0 6px 14px -4px rgba(40,65,55,.07); }
+    .sidebar-card h4 { font-family: 'DM Sans', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #7a9e8c; margin-bottom: 14px; }
+    .toc-list { list-style: none; margin: 0; padding: 0; } .toc-list li { margin-bottom: 6px; }
+    .toc-list a { font-family: 'DM Sans', sans-serif; font-size: 0.88rem; color: #4b665c; text-decoration: none; display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 8px; transition: .15s; font-weight: 500; }
+    .toc-list a:before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #c0d8c8; flex-shrink: 0; transition: .15s; }
+    .toc-list a:hover { background: #eef8f2; color: #1f4037; } .toc-list a:hover:before { background: #4a7f66; }
+    .related-item { display: flex; gap: 10px; margin-bottom: 14px; text-decoration: none; align-items: flex-start; }
+    .related-item:last-child { margin-bottom: 0; }
+    .related-item-icon { width: 38px; height: 38px; border-radius: 10px; background: #e8f5ec; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .related-item h5 { font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 600; color: #244034; line-height: 1.3; transition: .15s; }
+    .related-item:hover h5 { color: #376b53; }
+    .related-item span { font-family: 'DM Sans', sans-serif; font-size: 0.76rem; color: #7a9e8c; }
+    .sidebar-newsletter p { font-family: 'DM Sans', sans-serif; font-size: 0.87rem; color: #5a7a6a; margin-bottom: 12px; line-height: 1.5; }
+    .sidebar-email-wrap { display: flex; flex-direction: column; gap: 8px; }
+    .sidebar-email-input { background: #f4f9f6; border: 1.5px solid #d5e8de; border-radius: 10px; padding: 9px 14px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; color: #1e2e2b; outline: none; }
+    .sidebar-email-input::placeholder { color: #8abfa8; }
+    .sidebar-sub-btn { background: #376b53; color: #f1f9f0; border: none; border-radius: 10px; padding: 9px 14px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; font-weight: 700; cursor: pointer; transition: .18s; display: flex; align-items: center; justify-content: center; gap: 7px; }
+    .sidebar-sub-btn:hover { background: #1f4d3b; }
+    .related-bottom { margin-top: 3.5rem; padding-top: 2rem; border-top: 2px solid #d5e8de; }
+    .related-bottom h3 { font-family: 'DM Sans', sans-serif; font-size: 1.3rem; font-weight: 700; color: #1f4037; margin-bottom: 1.4rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .related-card { background: #fff; border: 1.5px solid #e2f0e7; border-radius: 16px; padding: 1.2rem 1.4rem; text-decoration: none; transition: all .22s ease; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 5px 12px -4px rgba(40,65,55,.07); }
+    .related-card:hover { transform: translateY(-4px); border-color: #8ac4a8; box-shadow: 0 14px 22px -8px rgba(30,65,50,.13); }
+    .related-card-tag { font-family: 'DM Sans', sans-serif; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: #4a7f66; background: #e2f5ea; padding: 2px 10px; border-radius: 20px; align-self: flex-start; }
+    .related-card h4 { font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 700; color: #1f4037; line-height: 1.35; }
+    .related-card p { font-family: 'DM Sans', sans-serif; font-size: 0.82rem; color: #5a7a6a; line-height: 1.4; }
+    .related-card .read-link { font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 700; color: #376b53; display: flex; align-items: center; gap: 5px; margin-top: 4px; }
+    @media (max-width: 960px) { .article-container { grid-template-columns: 1fr; gap: 2rem; } .article-sidebar { position: static; } .do-dont { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo-area"><div class="logo-image"><img src="../logo.png" alt="AIPLAT" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"><div class="logo" style="display:none;">AIPLAT <span>blog</span></div></div></div>
+  <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html" class="nav-item"><i class="fas fa-layer-group"></i> AI Platforms</a></li>
+    <li><a href="../categories.html" class="nav-item"><i class="fas fa-th"></i> Categories</a></li>
+    <li><a href="../use-cases.html" class="nav-item"><i class="fas fa-lightbulb"></i> Use Cases</a></li>
+    <li><a href="../blog.html" class="nav-item active"><i class="fas fa-newspaper"></i> Blog / News</a></li>
+    <li><a href="../submit.html" class="nav-item submit-link"><i class="fas fa-plus-circle"></i> Submit Tool</a></li>
+    <li><a href="../about.html" class="nav-item"><i class="fas fa-info-circle"></i> About</a></li>
+  </ul>
+</nav>
+
+<section class="page-banner">
+  <div class="page-banner-inner">
+    <h1><i class="fas fa-graduation-cap"></i> AI Tools for Students in 2026</h1>
+    <p>How to use AI to learn faster and work smarter — without undermining your education.</p>
+  </div>
+</section>
+
+<div class="inner-body article-container">
+  <article class="article-main">
+    <span class="article-hero-emoji">🎓</span>
+    <div class="article-meta">
+      <span class="article-tag">Students</span>
+      <div class="article-meta-item"><i class="fas fa-user-pen"></i><span>By <strong>AIPLAT Editorial</strong></span></div>
+      <div class="article-meta-item"><i class="far fa-calendar"></i><span>February 28, 2026</span></div>
+      <div class="article-meta-item"><i class="far fa-clock"></i><span>8 min read</span></div>
+      <div class="article-meta-item"><i class="fas fa-layer-group"></i><span>Education · Research · Productivity</span></div>
+    </div>
+
+    <div class="article-content">
+      <p>The conversation about AI in education has been dominated by two extremes: professors warning that AI will destroy academic integrity, and tech enthusiasts claiming it will replace teachers. The reality for students navigating their degree right now is considerably more practical than either framing.</p>
+
+      <p>AI tools have become a legitimate part of serious academic and professional work. The students using them well aren't cheating their way through coursework — they're using AI as a research accelerator, a writing feedback tool, and a personalised tutor. Here's how to do that effectively.</p>
+
+      <h2 id="research"><i class="fas fa-search"></i> Research and Literature Review</h2>
+
+      <p>The most time-intensive early stage of any research task — finding, reading, and synthesising sources — is where AI saves the most time without compromising academic integrity. The key is using AI to accelerate orientation, not to substitute for reading primary sources.</p>
+
+      <div class="tool-spotlight">
+        <div class="tool-spotlight-top">
+          <h4><i class="fas fa-search"></i> Perplexity AI</h4>
+          <a href="https://perplexity.ai" target="_blank" class="ts-open-link"><i class="fas fa-external-link-alt"></i> Open</a>
+        </div>
+        <p>Perplexity is the best starting point for academic research because it cites sources inline. Ask it to summarise recent literature on a topic and you get a structured overview with links to actual papers. Use it to identify which sources are worth reading in full — not to replace reading them.</p>
+        <div class="tool-spotlight-badges">
+          <span class="ts-badge ts-free">Free (unlimited standard search)</span>
+          <span class="ts-badge ts-best">Best for: topic orientation, literature mapping</span>
+        </div>
+      </div>
+
+      <div class="tool-spotlight">
+        <div class="tool-spotlight-top">
+          <h4><i class="fas fa-book-open"></i> Elicit</h4>
+          <a href="https://elicit.com" target="_blank" class="ts-open-link"><i class="fas fa-external-link-alt"></i> Open</a>
+        </div>
+        <p>Elicit is purpose-built for academic literature search. It searches actual academic papers and summarises their methodology, findings, and limitations side-by-side. For literature reviews across STEM, social sciences, and medicine, it's more appropriate than general AI search because it links to verifiable papers rather than synthesising information that may not be traceable.</p>
+        <div class="tool-spotlight-badges">
+          <span class="ts-badge ts-free">Free tier available</span>
+          <span class="ts-badge ts-best">Best for: systematic literature reviews, paper comparison</span>
+        </div>
+      </div>
+
+      <h2 id="writing"><i class="fas fa-pen-fancy"></i> Writing and Structure</h2>
+
+      <p>The legitimate use of AI in student writing is as a feedback and structure tool, not a ghostwriter. Think of it as a tutor who can review your draft at 1am — not a service that writes the essay for you.</p>
+
+      <div class="callout">
+        <i class="fas fa-lightbulb"></i>
+        <strong>Effective prompt:</strong> "I've written this essay on [topic]. The argument I'm trying to make is [X]. Please identify where the argument is weakest and suggest what evidence or reasoning could strengthen those sections." This improves your work without replacing your thinking.
+      </div>
+
+      <p>Claude handles long document review particularly well. Upload or paste an essay draft and ask it to assess argument structure, identify unsupported claims, or flag inconsistencies in your reasoning. This mirrors what a writing tutor does — it doesn't write for you, it makes your thinking clearer.</p>
+
+      <h2 id="learning"><i class="fas fa-brain"></i> Active Learning and Comprehension</h2>
+
+      <p>This is perhaps the most underused application of AI for students. Rather than passively re-reading notes, you can use an AI assistant as a Socratic tutor — one that asks you questions, challenges your understanding, and explains concepts from multiple angles on demand.</p>
+
+      <ul>
+        <li><strong>Concept explanation:</strong> "Explain this concept as if I understood the basics but kept getting confused at [specific point]." Adjust the depth until it clicks.</li>
+        <li><strong>Practice questions:</strong> "Generate five exam-style questions on this topic at undergraduate level." Then answer them without looking at your notes.</li>
+        <li><strong>Counter-argument practice:</strong> "I'm going to argue [position]. Challenge it with the three strongest counterarguments in the literature."</li>
+        <li><strong>Analogy generation:</strong> "I understand [concept A] but not [concept B]. Can you explain B using an analogy to A?"</li>
+      </ul>
+
+      <h2 id="coding"><i class="fas fa-code"></i> Programming and STEM Coursework</h2>
+
+      <p>For computer science and quantitative science students, AI coding assistants are already standard tools in professional environments — learning to use them effectively is part of the skillset your degree is building.</p>
+
+      <p>The approach that builds real competence: use AI to explain code you don't understand, debug logic errors you've tried to fix yourself, and understand alternative approaches. Don't paste in an assignment and submit the output. The difference isn't just ethical — students who outsource coding to AI consistently struggle with follow-on assessments and interviews.</p>
+
+      <hr class="article-divider">
+
+      <h2 id="ethics"><i class="fas fa-balance-scale"></i> The Integrity Question</h2>
+
+      <p>Most universities now have explicit AI use policies, and they vary significantly. Some prohibit AI entirely for assessed work. Others permit AI assistance with disclosure. Many are still developing their guidelines.</p>
+
+      <div class="warning-box">
+        <i class="fas fa-exclamation-triangle"></i>
+        <strong>Check your institution's policy before using AI in any assessed work.</strong> This guide covers legitimate use for learning and research orientation — submitting AI-generated text as your own original work is academic misconduct at most institutions, regardless of how the text was produced.
+      </div>
+
+      <div class="do-dont">
+        <div class="do-box">
+          <h5>✓ Legitimate uses</h5>
+          <ul>
+            <li>Getting feedback on your own writing</li>
+            <li>Identifying sources to investigate further</li>
+            <li>Explaining concepts you don't understand</li>
+            <li>Generating practice questions</li>
+            <li>Debugging your own code logic</li>
+          </ul>
+        </div>
+        <div class="dont-box">
+          <h5>✗ Problematic uses</h5>
+          <ul>
+            <li>Submitting AI-generated essays as your own</li>
+            <li>Using AI output without disclosure (where required)</li>
+            <li>Replacing primary source reading entirely</li>
+            <li>Asking AI to "do" your assignment</li>
+            <li>Fabricating citations AI invents</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="conclusion-box">
+        <h2><i class="fas fa-flag-checkered" style="color:#8ad4b4;margin-right:10px;"></i> The Mindset That Works</h2>
+        <p>AI tools are most valuable when they accelerate understanding, not bypass it. Students who use AI to get answers faster don't learn faster. Students who use AI to ask better questions, test their own knowledge, and identify gaps in their thinking do.</p>
+        <p><strong>Use AI the way you'd use a very good tutor: to challenge yourself, not to replace the work of thinking.</strong></p>
+      </div>
+
+      <div class="related-bottom">
+        <h3>Related Articles</h3>
+        <div class="related-grid">
+          <a href="top-free-ai-tools-2026.html" class="related-card"><span class="related-card-tag">Free Tools</span><h4>Top Free AI Tools in 2026</h4><p>The best tools students can access at zero cost.</p><span class="read-link"><i class="fas fa-arrow-right"></i> Read article</span></a>
+          <a href="claude-vs-chatgpt-guide.html" class="related-card"><span class="related-card-tag">Comparison</span><h4>Claude vs ChatGPT 2026</h4><p>Which AI assistant handles academic tasks better?</p><span class="read-link"><i class="fas fa-arrow-right"></i> Read article</span></a>
+          <a href="best-ai-tools-freelancers-2026.html" class="related-card"><span class="related-card-tag">Careers</span><h4>AI Tools for After Graduation</h4><p>The tools professionals use once you're in the workforce.</p><span class="read-link"><i class="fas fa-arrow-right"></i> Read article</span></a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <aside class="article-sidebar">
+    <div class="sidebar-card">
+      <h4><i class="fas fa-list" style="margin-right:6px;color:#4a7f66;"></i> In this article</h4>
+      <ul class="toc-list">
+        <li><a href="#research">Research & Literature</a></li>
+        <li><a href="#writing">Writing & Structure</a></li>
+        <li><a href="#learning">Active Learning</a></li>
+        <li><a href="#coding">Programming & STEM</a></li>
+        <li><a href="#ethics">The Integrity Question</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <h4><i class="fas fa-newspaper" style="margin-right:6px;color:#4a7f66;"></i> Related reads</h4>
+      <a href="top-free-ai-tools-2026.html" class="related-item"><div class="related-item-icon">🎁</div><div><h5>Top Free AI Tools 2026</h5><span>7 min read</span></div></a>
+      <a href="claude-vs-chatgpt-guide.html" class="related-item"><div class="related-item-icon">🤖</div><div><h5>Claude vs ChatGPT 2026</h5><span>9 min read</span></div></a>
+      <a href="best-ai-tools-freelancers-2026.html" class="related-item"><div class="related-item-icon">🧰</div><div><h5>Best AI Tools for Freelancers</h5><span>11 min read</span></div></a>
+    </div>
+    <div class="sidebar-card sidebar-newsletter">
+      <h4><i class="fas fa-envelope" style="margin-right:6px;color:#4a7f66;"></i> Weekly AI picks</h4>
+      <p>New tools, guides, and comparisons — every Friday, no noise.</p>
+      <div class="sidebar-email-wrap">
+        <input type="email" class="sidebar-email-input" placeholder="your@email.com" aria-label="Email">
+        <button class="sidebar-sub-btn"><i class="fas fa-paper-plane"></i> Subscribe</button>
+      </div>
+    </div>
+    <div class="sidebar-card" style="background: linear-gradient(135deg,#1f4037,#2c6650);border-color:#3a6a54;">
+      <h4 style="color:#8ad4b4;"><i class="fas fa-layer-group" style="margin-right:6px;"></i> Browse all tools</h4>
+      <p style="font-family:'DM Sans',sans-serif;font-size:.87rem;color:#b8d8c8;margin-bottom:14px;line-height:1.5;">Explore 16+ curated AI tools organised by category and pricing.</p>
+      <a href="../index.html" style="display:flex;align-items:center;justify-content:center;gap:7px;background:#4a7f66;color:#f0f9f4;text-decoration:none;font-family:'DM Sans',sans-serif;font-size:.88rem;font-weight:700;padding:10px 14px;border-radius:30px;transition:.18s;" onmouseover="this.style.background='#376b53'" onmouseout="this.style.background='#4a7f66'"><i class="fas fa-arrow-right"></i> View Directory</a>
+    </div>
+  </aside>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><img src="../logo.png" alt="AIPLAT" class="footer-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';"><span class="footer-logo-text" style="display:none;">AIPLAT</span><p class="footer-tagline">Your curated gateway to the AI ecosystem.</p></div>
+    <div class="footer-links-group"><h4>Navigate</h4><a href="../index.html">AI Platforms</a><a href="../categories.html">Categories</a><a href="../use-cases.html">Use Cases</a><a href="../blog.html">Blog / News</a></div>
+    <div class="footer-links-group"><h4>Community</h4><a href="../submit.html">Submit a Tool</a><a href="../about.html">About AIPLAT</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy Policy</a></div>
+    <div class="footer-links-group"><h4>Stay updated</h4><p class="footer-small">Weekly AI tool picks in your inbox.</p><div class="footer-subscribe"><input type="email" placeholder="your@email.com" class="footer-email-input" aria-label="Email"><button class="footer-sub-btn"><i class="fas fa-paper-plane"></i></button></div></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 AIPLAT – AI Tools Platform · All rights reserved</span><span class="footer-socials"><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="RSS"><i class="fas fa-rss"></i></a></span></div>
+</footer>
+<script>
+  const toggle = document.getElementById('navToggle'); const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => { links.classList.toggle('open'); toggle.querySelector('i').className = links.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars'; });
+  document.querySelectorAll('.toc-list a').forEach(link => { link.addEventListener('click', e => { const target = document.querySelector(link.getAttribute('href')); if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });
+</script>
+</body>
+</html>

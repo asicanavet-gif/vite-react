@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI for Marketing in 2026: What's Actually Working | AIPLAT</title>
+  <meta name="description" content="From campaign ideation to performance copy — a practical look at how marketing teams are using AI tools in 2026, with specific tactics that drive real results.">
+  <meta name="keywords" content="AI for marketing 2026, AI marketing tools, AI copywriting, ChatGPT marketing, AI content strategy 2026">
+  <meta property="og:title" content="AI for Marketing in 2026: What's Actually Working | AIPLAT">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/png" href="../icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .article-container { display: grid; grid-template-columns: 1fr 300px; gap: 3.5rem; align-items: flex-start; max-width: 1200px; }
+    .article-hero-emoji { font-size: 4.5rem; line-height: 1; margin-bottom: 1.5rem; display: block; }
+    .article-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-bottom: 2.2rem; padding-bottom: 1.4rem; border-bottom: 2px solid #d5e8de; }
+    .article-meta-item { display: flex; align-items: center; gap: 7px; font-size: 0.88rem; color: #5a7a6a; font-weight: 500; }
+    .article-meta-item i { color: #4a7f66; font-size: 0.82rem; }
+    .article-meta-item strong { color: #244034; }
+    .article-tag { background: #d8f5e0; color: #1a5c38; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; padding: 4px 12px; border-radius: 30px; }
+    .article-content { font-family: 'Lora', Georgia, serif; font-size: 1.05rem; line-height: 1.82; color: #2a3e38; }
+    .article-content p { margin-bottom: 1.4rem; }
+    .article-content h2 { font-family: 'DM Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: #1f4037; margin: 2.6rem 0 1rem; letter-spacing: -.02em; display: flex; align-items: center; gap: 10px; }
+    .article-content h2 i { color: #4a7f66; font-size: 1.2rem; flex-shrink: 0; }
+    .article-content h3 { font-family: 'DM Sans', sans-serif; font-size: 1.15rem; font-weight: 700; color: #244034; margin: 1.8rem 0 0.7rem; }
+    .article-content strong { color: #1f4037; font-weight: 700; }
+    .article-content em { font-style: italic; color: #4a6a60; }
+    .article-content ul { margin: 1rem 0 1.4rem 1.4rem; }
+    .article-content li { margin-bottom: 0.6rem; line-height: 1.6; }
+    .article-content ul li::marker { color: #4a7f66; }
+    .callout { background: linear-gradient(135deg, #f0faf4, #e6f5ec); border-left: 4px solid #4a7f66; border-radius: 0 14px 14px 0; padding: 1.2rem 1.6rem; margin: 1.8rem 0; font-family: 'DM Sans', sans-serif; font-size: 0.93rem; color: #2a4b3a; line-height: 1.55; }
+    .callout strong { color: #1a3e2a; } .callout i { color: #4a7f66; margin-right: 6px; }
+    .tool-spotlight { background: #fff; border: 1.5px solid #d5e8de; border-radius: 18px; padding: 1.4rem 1.6rem; margin: 1.4rem 0; box-shadow: 0 6px 14px -4px rgba(40,65,55,.08); font-family: 'DM Sans', sans-serif; }
+    .tool-spotlight-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; gap: 12px; }
+    .tool-spotlight h4 { font-size: 1.05rem; font-weight: 700; color: #1f4037; display: flex; align-items: center; gap: 8px; }
+    .tool-spotlight h4 i { color: #4a7f66; }
+    .tool-spotlight p { font-size: 0.9rem; color: #4b665c; line-height: 1.5; margin-bottom: 10px; font-family: 'DM Sans', sans-serif; }
+    .tool-spotlight-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+    .ts-badge { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; padding: 3px 9px; border-radius: 20px; }
+    .ts-free { background: #dff0fb; color: #0c4a7a; } .ts-paid { background: #ece8fd; color: #3a1f7a; } .ts-best { background: #fff3cc; color: #7a5c00; }
+    .ts-open-link { display: inline-flex; align-items: center; gap: 6px; background: #376b53; color: #f1f9f0; font-size: 0.82rem; font-weight: 700; padding: 7px 14px; border-radius: 30px; text-decoration: none; transition: .18s; white-space: nowrap; flex-shrink: 0; }
+    .ts-open-link:hover { background: #1f4d3b; }
+    .tactic-box { background: #f8fdf9; border: 1.5px solid #c8e8d4; border-radius: 14px; padding: 1.2rem 1.4rem; margin: 1.2rem 0; font-family: 'DM Sans', sans-serif; }
+    .tactic-box h4 { font-size: 0.95rem; font-weight: 700; color: #1f4037; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+    .tactic-box h4 i { color: #4a7f66; }
+    .tactic-box p { font-size: 0.88rem; color: #4b665c; line-height: 1.5; margin-bottom: 0; }
+    .article-divider { border: none; border-top: 1.5px solid #d5e8de; margin: 2.5rem 0; }
+    .conclusion-box { background: linear-gradient(135deg, #1f4037, #2c6650); border-radius: 20px; padding: 2rem 2.2rem; color: #e0f0e8; font-family: 'DM Sans', sans-serif; margin-top: 2.5rem; }
+    .conclusion-box h2 { color: #c8e8d8 !important; font-size: 1.3rem !important; margin-top: 0 !important; }
+    .conclusion-box p { font-family: 'DM Sans', sans-serif; color: #b8d8c8; font-size: 0.95rem; line-height: 1.6; margin-bottom: .8rem; }
+    .conclusion-box strong { color: #e0f0e8; }
+    .article-sidebar { position: sticky; top: 80px; }
+    .sidebar-card { background: #fff; border: 1.5px solid #e2f0e7; border-radius: 18px; padding: 1.4rem 1.6rem; margin-bottom: 20px; box-shadow: 0 6px 14px -4px rgba(40,65,55,.07); }
+    .sidebar-card h4 { font-family: 'DM Sans', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #7a9e8c; margin-bottom: 14px; }
+    .toc-list { list-style: none; margin: 0; padding: 0; } .toc-list li { margin-bottom: 6px; }
+    .toc-list a { font-family: 'DM Sans', sans-serif; font-size: 0.88rem; color: #4b665c; text-decoration: none; display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 8px; transition: .15s; font-weight: 500; }
+    .toc-list a:before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #c0d8c8; flex-shrink: 0; transition: .15s; }
+    .toc-list a:hover { background: #eef8f2; color: #1f4037; } .toc-list a:hover:before { background: #4a7f66; }
+    .related-item { display: flex; gap: 10px; margin-bottom: 14px; text-decoration: none; align-items: flex-start; }
+    .related-item:last-child { margin-bottom: 0; }
+    .related-item-icon { width: 38px; height: 38px; border-radius: 10px; background: #e8f5ec; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .related-item h5 { font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 600; color: #244034; line-height: 1.3; transition: .15s; }
+    .related-item:hover h5 { color: #376b53; }
+    .related-item span { font-family: 'DM Sans', sans-serif; font-size: 0.76rem; color: #7a9e8c; }
+    .sidebar-newsletter p { font-family: 'DM Sans', sans-serif; font-size: 0.87rem; color: #5a7a6a; margin-bottom: 12px; line-height: 1.5; }
+    .sidebar-email-wrap { display: flex; flex-direction: column; gap: 8px; }
+    .sidebar-email-input { background: #f4f9f6; border: 1.5px solid #d5e8de; border-radius: 10px; padding: 9px 14px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; color: #1e2e2b; outline: none; }
+    .sidebar-email-input::placeholder { color: #8abfa8; }
+    .sidebar-sub-btn { background: #376b53; color: #f1f9f0; border: none; border-radius: 10px; padding: 9px 14px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; font-weight: 700; cursor: pointer; transition: .18s; display: flex; align-items: center; justify-content: center; gap: 7px; }
+    .sidebar-sub-btn:hover { background: #1f4d3b; }
+    .related-bottom { margin-top: 3.5rem; padding-top: 2rem; border-top: 2px solid #d5e8de; }
+    .related-bottom h3 { font-family: 'DM Sans', sans-serif; font-size: 1.3rem; font-weight: 700; color: #1f4037; margin-bottom: 1.4rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .related-card { background: #fff; border: 1.5px solid #e2f0e7; border-radius: 16px; padding: 1.2rem 1.4rem; text-decoration: none; transition: all .22s ease; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 5px 12px -4px rgba(40,65,55,.07); }
+    .related-card:hover { transform: translateY(-4px); border-color: #8ac4a8; box-shadow: 0 14px 22px -8px rgba(30,65,50,.13); }
+    .related-card-tag { font-family: 'DM Sans', sans-serif; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: #4a7f66; background: #e2f5ea; padding: 2px 10px; border-radius: 20px; align-self: flex-start; }
+    .related-card h4 { font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 700; color: #1f4037; line-height: 1.35; }
+    .related-card p { font-family: 'DM Sans', sans-serif; font-size: 0.82rem; color: #5a7a6a; line-height: 1.4; }
+    .related-card .read-link { font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 700; color: #376b53; display: flex; align-items: center; gap: 5px; margin-top: 4px; }
+    @media (max-width: 960px) { .article-container { grid-template-columns: 1fr; gap: 2rem; } .article-sidebar { position: static; } }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo-area"><div class="logo-image"><img src="../logo.png" alt="AIPLAT" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"><div class="logo" style="display:none;">AIPLAT <span>blog</span></div></div></div>
+  <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html" class="nav-item"><i class="fas fa-layer-group"></i> AI Platforms</a></li>
+    <li><a href="../categories.html" class="nav-item"><i class="fas fa-th"></i> Categories</a></li>
+    <li><a href="../use-cases.html" class="nav-item"><i class="fas fa-lightbulb"></i> Use Cases</a></li>
+    <li><a href="../blog.html" class="nav-item active"><i class="fas fa-newspaper"></i> Blog / News</a></li>
+    <li><a href="../submit.html" class="nav-item submit-link"><i class="fas fa-plus-circle"></i> Submit Tool</a></li>
+    <li><a href="../about.html" class="nav-item"><i class="fas fa-info-circle"></i> About</a></li>
+  </ul>
+</nav>
+
+<section class="page-banner">
+  <div class="page-banner-inner">
+    <h1><i class="fas fa-bullhorn"></i> AI for Marketing in 2026</h1>
+    <p>Specific tactics and tools that are actually moving metrics — not AI hype, real results.</p>
+  </div>
+</section>
+
+<div class="inner-body article-container">
+  <article class="article-main">
+    <span class="article-hero-emoji">📣</span>
+    <div class="article-meta">
+      <span class="article-tag">Marketing</span>
+      <div class="article-meta-item"><i class="fas fa-user-pen"></i><span>By <strong>AIPLAT Editorial</strong></span></div>
+      <div class="article-meta-item"><i class="far fa-calendar"></i><span>February 28, 2026</span></div>
+      <div class="article-meta-item"><i class="far fa-clock"></i><span>8 min read</span></div>
+      <div class="article-meta-item"><i class="fas fa-layer-group"></i><span>Marketing · Content · Copy</span></div>
+    </div>
+
+    <div class="article-content">
+      <p>Marketing was one of the first professional fields to absorb AI tools at scale, and it's now one of the most differentiated — there's a significant gap between teams using AI to automate generic content production and teams using it to genuinely move faster on strategy and performance work.</p>
+
+      <p>This guide focuses on the latter: specific applications where AI has proven reliable in real marketing workflows, with honest notes on where the limitations still bite.</p>
+
+      <h2 id="copy"><i class="fas fa-pen-fancy"></i> Copy and Content Production</h2>
+
+      <p>The most common application of AI in marketing — writing copy — is also the most variable in quality. The difference isn't the tool, it's the prompt architecture. Teams that brief AI the same way they'd brief a mediocre junior copywriter get mediocre output. Teams that provide brand voice guidelines, audience context, and a specific creative angle get usable first drafts that need less editing.</p>
+
+      <div class="tactic-box">
+        <h4><i class="fas fa-check-circle"></i> Tactic: The Voice-Grounded Prompt</h4>
+        <p>Before any copy request, prepend your brand voice guidelines: tone words, what to avoid, an example of your best-performing piece. "Write like this, for this person, about this product angle" produces output closer to usable than "write a social post about our product."</p>
+      </div>
+
+      <div class="tactic-box">
+        <h4><i class="fas fa-check-circle"></i> Tactic: Variation Sets for A/B Testing</h4>
+        <p>Ask for 10 variations of a headline or subject line with a specific brief: 3 curiosity-driven, 3 benefit-led, 2 urgency-based, 2 contrarian. Testing across systematically varied approaches is faster with AI than briefing a human for each variation, and more structured than asking AI to "write 10 headlines."</p>
+      </div>
+
+      <h2 id="research"><i class="fas fa-chart-bar"></i> Audience Research and Brief Development</h2>
+
+      <p>AI hasn't replaced primary market research — surveys, interviews, and real customer data remain the foundation of good strategy. But it's made the synthesis of existing research faster and the development of detailed audience personas more rigorous.</p>
+
+      <div class="callout">
+        <i class="fas fa-lightbulb"></i>
+        <strong>Effective use:</strong> Paste in qualitative data from customer interviews or review mining and ask Claude to identify recurring pain language, objections, and desired outcomes by customer segment. The pattern-finding takes minutes versus hours. The analysis is still yours.
+      </div>
+
+      <h2 id="seo"><i class="fas fa-search"></i> SEO and Content Strategy</h2>
+
+      <p>AI's role in SEO has become more sophisticated than "generate keyword-stuffed articles." The teams seeing results are using it for strategic work: identifying content gap opportunities, planning topic cluster structures, and developing briefs that a human writer then produces to higher quality.</p>
+
+      <div class="tool-spotlight">
+        <div class="tool-spotlight-top">
+          <h4><i class="fas fa-chart-line"></i> Semrush AI features</h4>
+          <a href="https://www.semrush.com" target="_blank" class="ts-open-link"><i class="fas fa-external-link-alt"></i> Open</a>
+        </div>
+        <p>Semrush's AI integration now surfaces content brief generation, SERP intent analysis, and competitive gap identification within the platform. For SEO-focused content teams, having the data and the AI brief generation in one place removes a tool-switching step that previously added friction to the workflow.</p>
+        <div class="tool-spotlight-badges">
+          <span class="ts-badge ts-paid">Paid from $139/mo</span>
+          <span class="ts-badge ts-best">Best for: SEO content strategy, gap analysis</span>
+        </div>
+      </div>
+
+      <h2 id="email"><i class="fas fa-envelope-open-text"></i> Email Marketing</h2>
+
+      <p>Email is where AI's copy capabilities translate most directly into measurable results. Subject line optimisation, personalisation at scale, and campaign sequence architecture are all areas where AI can make meaningful contributions — and where the impact is testable within days rather than months.</p>
+
+      <div class="tactic-box">
+        <h4><i class="fas fa-check-circle"></i> Tactic: Segment-Specific Rewriting</h4>
+        <p>Write one core email, then use AI to rewrite it for three or four distinct segments with different pain points or buying stages. The structural work is done once; AI adapts the framing and emphasis. This enables genuine personalisation without proportionally more time.</p>
+      </div>
+
+      <div class="tactic-box">
+        <h4><i class="fas fa-check-circle"></i> Tactic: Objection-Handling Sequences</h4>
+        <p>Map your three main conversion objections, then brief AI to write a drip sequence that addresses each one with specific evidence and social proof. This creates a direct line from customer research to campaign structure.</p>
+      </div>
+
+      <h2 id="social"><i class="fas fa-hashtag"></i> Social Media and Visual Content</h2>
+
+      <p>The combination of AI writing and image tools has made "full social calendar" production achievable for small teams that previously needed to outsource most content creation. The caveat: volume doesn't equal engagement. Brands producing 50 AI-assisted posts a week with no distinct point of view are still losing to brands producing five posts that reflect genuine expertise or personality.</p>
+
+      <p>AI's most valuable role in social is the mechanical work: reformatting long-form content into platform-appropriate formats, generating caption variations, and producing background imagery that fits a campaign aesthetic. The creative direction and the genuine opinions still need a human source.</p>
+
+      <hr class="article-divider">
+
+      <h2 id="limits"><i class="fas fa-exclamation-circle"></i> Where AI Marketing Still Falls Short</h2>
+      <ul>
+        <li><strong>Brand differentiation:</strong> AI optimises toward average. Genuinely distinctive brand voices require human creative leadership that feeds the model rather than following it.</li>
+        <li><strong>Cultural and trend sensitivity:</strong> AI doesn't know what's happening in your industry right now without web search, and even with it, it can't read cultural timing the way an experienced marketer can.</li>
+        <li><strong>Earned insight:</strong> Customer intelligence from direct relationships, proprietary data, or years in a specific market cannot be replicated by a general AI model. That's your moat — protect and leverage it.</li>
+      </ul>
+
+      <div class="conclusion-box">
+        <h2><i class="fas fa-flag-checkered" style="color:#8ad4b4;margin-right:10px;"></i> The Competitive Reality</h2>
+        <p>Every marketing team now has access to the same AI tools. The differentiating factor is the quality of the inputs — brand voice, customer insight, creative strategy — that humans bring to the AI workflow. The teams winning with AI aren't using it as a strategy replacement. They're using it to execute a sharper human strategy faster.</p>
+        <p><strong>Better brief in, better output out. That's still true whether the executor is a human or a model.</strong></p>
+      </div>
+
+      <div class="related-bottom">
+        <h3>Related Articles</h3>
+        <div class="related-grid">
+          <a href="chatgpt-for-business.html" class="related-card"><span class="related-card-tag">Business</span><h4>ChatGPT for Business: Real Use Cases</h4><p>Operations, customer communication, and content at scale.</p><span class="read-link"><i class="fas fa-arrow-right"></i> Read article</span></a>
+          <a href="best-ai-tools-freelancers-2026.html" class="related-card"><span class="related-card-tag">Freelance</span><h4>Best AI Tools for Freelancers 2026</h4><p>The practical toolkit for solo marketers and consultants.</p><span class="read-link"><i class="fas fa-arrow-right"></i> Read article</span></a>
+          <a href="midjourney-vs-dalle-2026.html" class="related-card"><span class="related-card-tag">Image AI</span><h4>Midjourney vs DALL-E 2026</h4><p>Which tool produces better marketing visuals?</p><span class="read-link"><i class="fas fa-arrow-right"></i> Read article</span></a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <aside class="article-sidebar">
+    <div class="sidebar-card">
+      <h4><i class="fas fa-list" style="margin-right:6px;color:#4a7f66;"></i> In this article</h4>
+      <ul class="toc-list">
+        <li><a href="#copy">Copy & Content</a></li>
+        <li><a href="#research">Audience Research</a></li>
+        <li><a href="#seo">SEO & Content Strategy</a></li>
+        <li><a href="#email">Email Marketing</a></li>
+        <li><a href="#social">Social & Visual</a></li>
+        <li><a href="#limits">Where It Falls Short</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <h4><i class="fas fa-newspaper" style="margin-right:6px;color:#4a7f66;"></i> Related reads</h4>
+      <a href="chatgpt-for-business.html" class="related-item"><div class="related-item-icon">💼</div><div><h5>ChatGPT for Business</h5><span>8 min read</span></div></a>
+      <a href="best-ai-tools-freelancers-2026.html" class="related-item"><div class="related-item-icon">🧰</div><div><h5>Best AI Tools for Freelancers</h5><span>11 min read</span></div></a>
+      <a href="claude-vs-chatgpt-guide.html" class="related-item"><div class="related-item-icon">🤖</div><div><h5>Claude vs ChatGPT 2026</h5><span>9 min read</span></div></a>
+    </div>
+    <div class="sidebar-card sidebar-newsletter">
+      <h4><i class="fas fa-envelope" style="margin-right:6px;color:#4a7f66;"></i> Weekly AI picks</h4>
+      <p>New tools, guides, and comparisons — every Friday, no noise.</p>
+      <div class="sidebar-email-wrap">
+        <input type="email" class="sidebar-email-input" placeholder="your@email.com" aria-label="Email">
+        <button class="sidebar-sub-btn"><i class="fas fa-paper-plane"></i> Subscribe</button>
+      </div>
+    </div>
+    <div class="sidebar-card" style="background: linear-gradient(135deg,#1f4037,#2c6650);border-color:#3a6a54;">
+      <h4 style="color:#8ad4b4;"><i class="fas fa-layer-group" style="margin-right:6px;"></i> Browse all tools</h4>
+      <p style="font-family:'DM Sans',sans-serif;font-size:.87rem;color:#b8d8c8;margin-bottom:14px;line-height:1.5;">Explore 16+ curated AI tools organised by category and pricing.</p>
+      <a href="../index.html" style="display:flex;align-items:center;justify-content:center;gap:7px;background:#4a7f66;color:#f0f9f4;text-decoration:none;font-family:'DM Sans',sans-serif;font-size:.88rem;font-weight:700;padding:10px 14px;border-radius:30px;transition:.18s;" onmouseover="this.style.background='#376b53'" onmouseout="this.style.background='#4a7f66'"><i class="fas fa-arrow-right"></i> View Directory</a>
+    </div>
+  </aside>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><img src="../logo.png" alt="AIPLAT" class="footer-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';"><span class="footer-logo-text" style="display:none;">AIPLAT</span><p class="footer-tagline">Your curated gateway to the AI ecosystem.</p></div>
+    <div class="footer-links-group"><h4>Navigate</h4><a href="../index.html">AI Platforms</a><a href="../categories.html">Categories</a><a href="../use-cases.html">Use Cases</a><a href="../blog.html">Blog / News</a></div>
+    <div class="footer-links-group"><h4>Community</h4><a href="../submit.html">Submit a Tool</a><a href="../about.html">About AIPLAT</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy Policy</a></div>
+    <div class="footer-links-group"><h4>Stay updated</h4><p class="footer-small">Weekly AI tool picks in your inbox.</p><div class="footer-subscribe"><input type="email" placeholder="your@email.com" class="footer-email-input" aria-label="Email"><button class="footer-sub-btn"><i class="fas fa-paper-plane"></i></button></div></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 AIPLAT – AI Tools Platform · All rights reserved</span><span class="footer-socials"><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="RSS"><i class="fas fa-rss"></i></a></span></div>
+</footer>
+<script>
+  const toggle = document.getElementById('navToggle'); const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => { links.classList.toggle('open'); toggle.querySelector('i').className = links.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars'; });
+  document.querySelectorAll('.toc-list a').forEach(link => { link.addEventListener('click', e => { const target = document.querySelector(link.getAttribute('href')); if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });
+</script>
+</body>
+</html>
