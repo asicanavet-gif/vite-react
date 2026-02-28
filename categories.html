@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AIPLAT – Categories</title>
+  <link rel="icon" type="image/png" href="icon.png">
+  <meta name="description" content="Browse AI tools by category — writing, image, video, code, voice and more.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 22px;
+      margin-top: 10px;
+    }
+    .cat-card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 2rem 1.8rem;
+      border: 1.5px solid #e2f0e7;
+      box-shadow: 0 8px 18px -6px rgba(40,65,55,.08);
+      transition: all .25s ease;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px -10px rgba(30,65,50,.16);
+      border-color: #9ac8b0;
+    }
+    .cat-icon {
+      width: 56px; height: 56px;
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+    }
+    .cat-card h3 { font-size: 1.25rem; font-weight: 700; color: #1f4037; }
+    .cat-card p  { font-size: 0.9rem; color: #5a7a6a; line-height: 1.4; flex: 1; }
+    .cat-count {
+      font-size: 0.78rem; font-weight: 700; color: #7a9e8c;
+      background: #e2f0e7; padding: 3px 12px; border-radius: 30px;
+      align-self: flex-start;
+    }
+
+    /* icon colours */
+    .ic-write  { background: #d8f5e8; color: #2a6a48; }
+    .ic-image  { background: #ddeeff; color: #1a4a8a; }
+    .ic-video  { background: #ffe8e8; color: #8a2020; }
+    .ic-voice  { background: #ece8fd; color: #4a2080; }
+    .ic-code   { background: #e8f5d8; color: #2a5820; }
+    .ic-search { background: #fff4d8; color: #7a5a00; }
+    .ic-assist { background: #d8eef8; color: #1a4a6a; }
+    .ic-market { background: #ffe8d8; color: #8a3a10; }
+    .ic-meet   { background: #d8f8e8; color: #1a5a38; }
+    .ic-hub    { background: #f0e8d8; color: #5a3a10; }
+    .ic-creat  { background: #f8d8f0; color: #6a1a5a; }
+    .ic-data   { background: #d8f4f0; color: #1a5a50; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo-area">
+    <div class="logo-image">
+      <img src="logo.png" alt="AIPLAT" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+      <div class="logo" style="display:none;">AIPLAT <span>alpha</span></div>
+    </div>
+  </div>
+  <button class="nav-hamburger" id="navToggle"><i class="fas fa-bars"></i></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html"      class="nav-item"><i class="fas fa-layer-group"></i> AI Platforms</a></li>
+    <li><a href="categories.html" class="nav-item active"><i class="fas fa-th"></i> Categories</a></li>
+    <li><a href="use-cases.html"  class="nav-item"><i class="fas fa-lightbulb"></i> Use Cases</a></li>
+    <li><a href="blog.html"       class="nav-item"><i class="fas fa-newspaper"></i> Blog / News</a></li>
+    <li><a href="submit.html"     class="nav-item submit-link"><i class="fas fa-plus-circle"></i> Submit Tool</a></li>
+    <li><a href="about.html"      class="nav-item"><i class="fas fa-info-circle"></i> About</a></li>
+  </ul>
+</nav>
+
+<section class="page-banner">
+  <div class="page-banner-inner">
+    <h1><i class="fas fa-th"></i> Categories</h1>
+    <p>Browse all AI tools organized by capability and use type.</p>
+  </div>
+</section>
+
+<div class="inner-body">
+  <div class="cat-grid">
+
+    <a href="index.html?cat=writing" class="cat-card">
+      <div class="cat-icon ic-write"><i class="fas fa-pen-fancy"></i></div>
+      <h3>Writing & Copy</h3>
+      <p>AI assistants for copywriting, blog posts, essays, emails, and creative writing.</p>
+      <span class="cat-count">4 tools</span>
+    </a>
+
+    <a href="index.html?cat=image" class="cat-card">
+      <div class="cat-icon ic-image"><i class="fas fa-palette"></i></div>
+      <h3>Image Generation</h3>
+      <p>Text-to-image AI tools for art, design, product photos, and illustrations.</p>
+      <span class="cat-count">4 tools</span>
+    </a>
+
+    <a href="index.html?cat=video" class="cat-card">
+      <div class="cat-icon ic-video"><i class="fas fa-clapperboard"></i></div>
+      <h3>Video Creation</h3>
+      <p>AI-driven video generation, editing, avatar presenters, and animation tools.</p>
+      <span class="cat-count">2 tools</span>
+    </a>
+
+    <a href="index.html?cat=voice" class="cat-card">
+      <div class="cat-icon ic-voice"><i class="fas fa-microphone-alt"></i></div>
+      <h3>Voice & Audio</h3>
+      <p>Voice synthesis, cloning, podcast editing, and audio post-production.</p>
+      <span class="cat-count">2 tools</span>
+    </a>
+
+    <a href="index.html?cat=code" class="cat-card">
+      <div class="cat-icon ic-code"><i class="fas fa-code"></i></div>
+      <h3>Code & Development</h3>
+      <p>AI-powered coding assistants, autocompletion, debugging, and pair programming.</p>
+      <span class="cat-count">1 tool</span>
+    </a>
+
+    <a href="index.html?cat=search" class="cat-card">
+      <div class="cat-icon ic-search"><i class="fas fa-magnifying-glass"></i></div>
+      <h3>AI Search</h3>
+      <p>Conversational search engines with citations, real-time answers, and research aids.</p>
+      <span class="cat-count">1 tool</span>
+    </a>
+
+    <a href="index.html?cat=assistant" class="cat-card">
+      <div class="cat-icon ic-assist"><i class="fas fa-robot"></i></div>
+      <h3>AI Assistants</h3>
+      <p>General-purpose AI chatbots and productivity assistants for everyday tasks.</p>
+      <span class="cat-count">2 tools</span>
+    </a>
+
+    <a href="index.html?cat=marketing" class="cat-card">
+      <div class="cat-icon ic-market"><i class="fas fa-bullhorn"></i></div>
+      <h3>Marketing</h3>
+      <p>AI tools for ad copy, brand content, SEO optimization, and campaign creation.</p>
+      <span class="cat-count">1 tool</span>
+    </a>
+
+    <a href="index.html?cat=meeting" class="cat-card">
+      <div class="cat-icon ic-meet"><i class="fas fa-users"></i></div>
+      <h3>Meetings & Notes</h3>
+      <p>Automated transcription, meeting summarisation, and action item tracking.</p>
+      <span class="cat-count">1 tool</span>
+    </a>
+
+    <a href="index.html?cat=hub" class="cat-card">
+      <div class="cat-icon ic-hub"><i class="fas fa-smile"></i></div>
+      <h3>ML Hubs</h3>
+      <p>Model repositories, datasets, community spaces, and open-source ML platforms.</p>
+      <span class="cat-count">1 tool</span>
+    </a>
+
+    <a href="index.html?cat=creative" class="cat-card">
+      <div class="cat-icon ic-creat"><i class="fas fa-bolt"></i></div>
+      <h3>Creative Suite</h3>
+      <p>AI-enhanced design tools for professionals integrated into existing creative workflows.</p>
+      <span class="cat-count">1 tool</span>
+    </a>
+
+    <a href="index.html?cat=data" class="cat-card">
+      <div class="cat-icon ic-data"><i class="fas fa-chart-line"></i></div>
+      <h3>Analytics & Data</h3>
+      <p>AI tools for data analysis, visualisation, forecasting, and business intelligence.</p>
+      <span class="cat-count">Coming soon</span>
+    </a>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo.png" alt="AIPLAT" class="footer-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span class="footer-logo-text" style="display:none;">AIPLAT</span>
+      <p class="footer-tagline">Your curated gateway to the AI ecosystem.</p>
+    </div>
+    <div class="footer-links-group">
+      <h4>Navigate</h4>
+      <a href="index.html">AI Platforms</a>
+      <a href="categories.html">Categories</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="blog.html">Blog / News</a>
+    </div>
+    <div class="footer-links-group">
+      <h4>Community</h4>
+      <a href="submit.html">Submit a Tool</a>
+      <a href="about.html">About AIPLAT</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <div class="footer-links-group">
+      <h4>Stay updated</h4>
+      <p class="footer-small">Get weekly AI tool picks in your inbox.</p>
+      <div class="footer-subscribe">
+        <input type="email" placeholder="your@email.com" class="footer-email-input" aria-label="Email">
+        <button class="footer-sub-btn"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 AIPLAT – AI Tools Platform · All rights reserved</span>
+    <span class="footer-socials">
+      <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" aria-label="RSS"><i class="fas fa-rss"></i></a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('open');
+    toggle.querySelector('i').className = links.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars';
+  });
+</script>
+</body>
+</html>

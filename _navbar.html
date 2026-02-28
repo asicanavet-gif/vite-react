@@ -1,0 +1,78 @@
+<!-- ========================================================
+     AIPLAT SHARED NAVBAR  — copy into every page
+     Change data-page="index" to match the current page:
+     index | categories | use-cases | blog | submit | about
+     ======================================================== -->
+<nav class="navbar" data-page="index">
+  <div class="logo-area">
+    <div class="logo-image">
+      <img src="logo.png" alt="AIPLAT logo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+      <div class="logo" style="display:none;">AIPLAT <span>alpha</span></div>
+    </div>
+  </div>
+
+  <!-- hamburger (mobile) -->
+  <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html"       class="nav-item" data-key="index">
+      <i class="fas fa-layer-group"></i> AI Platforms</a></li>
+    <li><a href="categories.html"  class="nav-item" data-key="categories">
+      <i class="fas fa-th"></i> Categories</a></li>
+    <li><a href="use-cases.html"   class="nav-item" data-key="use-cases">
+      <i class="fas fa-lightbulb"></i> Use Cases</a></li>
+    <li><a href="blog.html"        class="nav-item" data-key="blog">
+      <i class="fas fa-newspaper"></i> Blog / News</a></li>
+    <li><a href="submit.html"      class="nav-item submit-link" data-key="submit">
+      <i class="fas fa-plus-circle"></i> Submit Tool</a></li>
+    <li><a href="about.html"       class="nav-item" data-key="about">
+      <i class="fas fa-info-circle"></i> About</a></li>
+  </ul>
+</nav>
+
+<!-- ========================================================
+     AIPLAT SHARED FOOTER — copy into every page
+     ======================================================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo.png" alt="AIPLAT" class="footer-logo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span class="footer-logo-text" style="display:none;">AIPLAT</span>
+      <p class="footer-tagline">Your curated gateway to the AI ecosystem.</p>
+    </div>
+    <div class="footer-links-group">
+      <h4>Navigate</h4>
+      <a href="index.html">AI Platforms</a>
+      <a href="categories.html">Categories</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="blog.html">Blog / News</a>
+    </div>
+    <div class="footer-links-group">
+      <h4>Community</h4>
+      <a href="submit.html">Submit a Tool</a>
+      <a href="about.html">About AIPLAT</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <div class="footer-links-group">
+      <h4>Stay updated</h4>
+      <p class="footer-small">Get weekly AI tool picks in your inbox.</p>
+      <div class="footer-subscribe">
+        <input type="email" placeholder="your@email.com" class="footer-email-input">
+        <button class="footer-sub-btn"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 AIPLAT – AI Tools Platform · All rights reserved</span>
+    <span class="footer-socials">
+      <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" aria-label="RSS"><i class="fas fa-rss"></i></a>
+    </span>
+  </div>
+</footer>

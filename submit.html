@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AIPLAT – Submit a Tool</title>
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .submit-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .submit-intro {
+      background: #fff;
+      border-radius: 22px;
+      border: 1.5px solid #e2f0e7;
+      padding: 2rem 2.2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      box-shadow: 0 8px 18px -6px rgba(40,65,55,.08);
+    }
+    .submit-intro i { font-size: 2rem; color: #4a7f66; flex-shrink: 0; margin-top: 3px; }
+    .submit-intro h3 { font-size: 1.1rem; font-weight: 700; color: #1f4037; margin-bottom: 6px; }
+    .submit-intro p { font-size: 0.9rem; color: #5a7a6a; line-height: 1.5; }
+
+    .form-card {
+      background: #fff;
+      border-radius: 24px;
+      border: 1.5px solid #e2f0e7;
+      padding: 2.5rem 2.8rem;
+      box-shadow: 0 8px 20px -6px rgba(40,65,55,.09);
+    }
+    .form-group { margin-bottom: 1.6rem; }
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #2a4b3a;
+      margin-bottom: 7px;
+      letter-spacing: .2px;
+    }
+    .form-group label .req { color: #e05a5a; margin-left: 3px; }
+    .form-control {
+      width: 100%;
+      background: #f4f9f6;
+      border: 1.5px solid #d5e8de;
+      border-radius: 12px;
+      padding: 12px 16px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: #1e2e2b;
+      outline: none;
+      transition: .18s;
+    }
+    .form-control:focus {
+      border-color: #5a8f75;
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(90,143,117,.12);
+    }
+    .form-control::placeholder { color: #8abfa8; }
+    textarea.form-control { resize: vertical; min-height: 110px; }
+    select.form-control { cursor: pointer; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .submit-btn {
+      width: 100%;
+      background: #376b53;
+      color: #f1f9f0;
+      border: none;
+      border-radius: 50px;
+      padding: 14px 24px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 8px;
+      border: 1.5px solid #4d8a70;
+    }
+    .submit-btn:hover { background: #1f4d3b; }
+
+    .submit-note { font-size: 0.82rem; color: #8abfa8; text-align: center; margin-top: 14px; }
+    .radio-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    .radio-pill {
+      display: flex; align-items: center; gap: 7px;
+      background: #f4f9f6;
+      border: 1.5px solid #d5e8de;
+      border-radius: 50px;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #2a4b3a;
+      transition: .18s;
+    }
+    .radio-pill input { display: none; }
+    .radio-pill:has(input:checked) { background: #4a7f66; color: #fff; border-color: #3a6651; }
+
+    @media (max-width: 600px) {
+      .form-card { padding: 1.8rem 1.4rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo-area">
+    <div class="logo-image">
+      <img src="logo.png" alt="AIPLAT" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+      <div class="logo" style="display:none;">AIPLAT <span>alpha</span></div>
+    </div>
+  </div>
+  <button class="nav-hamburger" id="navToggle"><i class="fas fa-bars"></i></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html"      class="nav-item"><i class="fas fa-layer-group"></i> AI Platforms</a></li>
+    <li><a href="categories.html" class="nav-item"><i class="fas fa-th"></i> Categories</a></li>
+    <li><a href="use-cases.html"  class="nav-item"><i class="fas fa-lightbulb"></i> Use Cases</a></li>
+    <li><a href="blog.html"       class="nav-item"><i class="fas fa-newspaper"></i> Blog / News</a></li>
+    <li><a href="submit.html"     class="nav-item submit-link active"><i class="fas fa-plus-circle"></i> Submit Tool</a></li>
+    <li><a href="about.html"      class="nav-item"><i class="fas fa-info-circle"></i> About</a></li>
+  </ul>
+</nav>
+
+<section class="page-banner">
+  <div class="page-banner-inner">
+    <h1><i class="fas fa-plus-circle"></i> Submit a Tool</h1>
+    <p>Know an AI tool that deserves to be on AIPLAT? Tell us about it.</p>
+  </div>
+</section>
+
+<div class="inner-body">
+  <div class="submit-wrap">
+
+    <div class="submit-intro">
+      <i class="fas fa-info-circle"></i>
+      <div>
+        <h3>Submission guidelines</h3>
+        <p>We review every submission manually. We list tools that are genuinely useful, actively maintained, and relevant to AI workflows. Free tools, paid tools, and open-source projects are all welcome. Spam or low-quality submissions will not be listed.</p>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <form id="submitForm" onsubmit="handleSubmit(event)">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Tool name <span class="req">*</span></label>
+            <input type="text" class="form-control" placeholder="e.g. Midjourney" required>
+          </div>
+          <div class="form-group">
+            <label>Website URL <span class="req">*</span></label>
+            <input type="url" class="form-control" placeholder="https://" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Category <span class="req">*</span></label>
+          <select class="form-control" required>
+            <option value="">— Select a category —</option>
+            <option>Writing & Copy</option>
+            <option>Image Generation</option>
+            <option>Video Creation</option>
+            <option>Voice & Audio</option>
+            <option>Code & Development</option>
+            <option>AI Search</option>
+            <option>AI Assistant</option>
+            <option>Marketing</option>
+            <option>Meetings & Notes</option>
+            <option>ML Hub</option>
+            <option>Creative Suite</option>
+            <option>Analytics & Data</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Pricing model <span class="req">*</span></label>
+          <div class="radio-group">
+            <label class="radio-pill"><input type="radio" name="pricing" value="free"> <i class="fas fa-gift"></i> Free</label>
+            <label class="radio-pill"><input type="radio" name="pricing" value="freemium"> <i class="fas fa-layer-group"></i> Freemium</label>
+            <label class="radio-pill"><input type="radio" name="pricing" value="paid"> <i class="fas fa-star"></i> Paid</label>
+            <label class="radio-pill"><input type="radio" name="pricing" value="open"> <i class="fab fa-osi"></i> Open-source</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Short description <span class="req">*</span></label>
+          <textarea class="form-control" placeholder="Describe what this tool does and who it's for (max 160 chars)" maxlength="160" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Why should we list it?</label>
+          <textarea class="form-control" placeholder="Tell us what makes this tool stand out from alternatives…" style="min-height:80px;"></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your name</label>
+            <input type="text" class="form-control" placeholder="Optional">
+          </div>
+          <div class="form-group">
+            <label>Your email</label>
+            <input type="email" class="form-control" placeholder="For updates (optional)">
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane"></i> Submit for review
+        </button>
+        <p class="submit-note">We aim to review submissions within 3–5 business days.</p>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo.png" alt="AIPLAT" class="footer-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span class="footer-logo-text" style="display:none;">AIPLAT</span>
+      <p class="footer-tagline">Your curated gateway to the AI ecosystem.</p>
+    </div>
+    <div class="footer-links-group">
+      <h4>Navigate</h4>
+      <a href="index.html">AI Platforms</a>
+      <a href="categories.html">Categories</a>
+      <a href="blog.html">Blog / News</a>
+    </div>
+    <div class="footer-links-group">
+      <h4>Community</h4>
+      <a href="submit.html">Submit a Tool</a>
+      <a href="about.html">About AIPLAT</a>
+    </div>
+    <div class="footer-links-group">
+      <h4>Stay updated</h4>
+      <p class="footer-small">Weekly AI picks in your inbox.</p>
+      <div class="footer-subscribe">
+        <input type="email" placeholder="your@email.com" class="footer-email-input">
+        <button class="footer-sub-btn"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 AIPLAT – AI Tools Platform</span>
+    <span class="footer-socials">
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  const t = document.getElementById('navToggle'), l = document.getElementById('navLinks');
+  t.addEventListener('click', () => { l.classList.toggle('open'); t.querySelector('i').className = l.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars'; });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.submit-btn');
+    btn.innerHTML = '<i class="fas fa-check"></i> Submitted — thank you!';
+    btn.style.background = '#2e7d5e';
+    btn.disabled = true;
+  }
+</script>
+</body>
+</html>
